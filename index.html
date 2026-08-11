@@ -1,0 +1,242 @@
+<!DOCTYPE html> 
+<html lang="eng">
+    <head>
+        <!-- head
+
+        Purpose:hy
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+               <title> STRILLA </title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+     
+    <body> 
+    <header class="header-container"> 
+    
+     <div class="navbar">
+        <ul>  
+     <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>     
+   <li><a href="#links">Links</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li>
+        <button id="theme-button">
+            Toggle Dark Mode
+            </button>
+        </li>
+        </ul>
+    </div>
+    </header> 
+
+    <section id="home" class="hero"> 
+
+     <div class="hero-text">
+
+       <h1> STRILLA </h1>
+        <h2> Fashion Your Truth.</h2>
+     
+    
+     <div class="hero-buttons">
+        <button class="primary-btn"> Register Now</button>
+               <a href="#schedule"> 
+        <button class="secondary-btn"> Event Schedule</button>
+         </a>
+            </div>
+        </div>
+         <div class="hero-image">
+             <img src="img/STRILLA TRILLA.png " alt="STRILLA Hero">
+         </div>
+
+          </section>
+
+          <section id="about" class="about revealable">
+             <h2> About STRILLA</h2>
+        <p> STRILLA is a platform built to help
+         people discover what's next in fashion and culture. We connect 
+         users with upcoming drops, emerging brands, and the stories behind them.
+          More than fashion, STRILLA is about authenticity, self-expression, and staying 
+          true to who you are. Our mission is simple: Fashion. Your. Truth. 
+        </p>
+    </section>
+    
+        <section id="what-to-expect">
+        <h2>What to Expect</h2>
+        <h3> Discover What's Next in Fashion</h3>
+        <ul>
+            <li> <b> Upcoming Releases: </b> <i> Stay updated on sneaker, clothing, and accessory drops before they launch.</i></li>
+            <li> <b> Emerging Brand Spotlights </b > <i> Discover rising designers and innovative streetwear labels. </i></li>
+            <li> <b> Fashion Culture</b> <i> Explore the stories , inspiration , and creativity behind every collection.</i></li>
+        </ul>
+        </section>
+    
+
+        <section id="schedule" class="revealable"> 
+        <h2> Event Schedule </h2>
+
+        <div class="schedule-container"> 
+
+        <div class= "event-card">
+        <img src="img/STRILLAXA.jpeg " alt="Event 1">
+        <h3> Day 1</h3>
+        <p> July 30th-Sneaker Showcase</p>
+        </div>
+
+            <div class="event-card"> 
+        <img alt="Event 2"  src="img/STRILLAXB.jpeg"/>
+        <h3>Day 2</h3>
+        <p> July 31st-Fashion Streetwear Workshop</p>
+            </div>
+
+            <div class="event-card"> 
+        <img alt="Event 3"  src="img/STRILLAXC.jpeg "/>
+        <h3> Day 3</h3>
+        <p> August 1st-Fashion Networking</p>
+            </div>
+
+        </div>
+
+        </section>
+
+      
+     
+          <section id="RSVP" class="rsvp-section revealable"> 
+           <h2>RSVP</h2>
+    <div class="rsvp-container"> 
+
+     <div class="rsvp-para">
+           <p>
+             Be part of the STRILLA expierence.  
+            Confirm your attendance to secure y
+            our place and become part of our growing community. As guests RSVP, the live attendee list updates
+            in real time, showcasing everyone who's ready to celebrate fashion , creavity , and culture together.
+           Connect with fellow sneaker enthusiasts , designers , and trendsetters while building lasting relaionships
+           and unforgettable memories. Don't miss this oppurtunity to express 
+           your unique style and be part of an event where fashion truly comes to life.
+        </p>
+           </div>
+
+        
+            <div class="rsvp-participants" id="rsvp-participants">
+        <p> Joshua loves Chanel is coming to STRILLA</p>
+       <p>  Amy Loves SaintsWorld and is coming to STRILLA </p>
+       <p> Israel loves Sp5der and is coming to STRILLA </p>
+       <p> Debra loves Supreme and is coming to STRILLA </p>
+          </div>
+
+          </div>
+
+          <!--- Sign RSVP Form --->
+     <div class="form-container">
+            <!-- form inputs go here -->
+
+        <form id="rsvp-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="brand">Favorite Brands:</label> 
+        <input type="text" id="brand" name="brand" required>
+
+         <button type="button" id="rsvp-button">Submit RSVP</button>
+          </form>
+     </div>
+    </section>
+ 
+
+ 
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+
+<!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+
+        <div class="modal-item">
+            <p id="modal-text"></p>
+        </div>
+
+        <div class="modal-item">
+           <img id="modal-image"   src="img/front end strilla.png"  alt="STRILLA">
+        </div>
+    
+    </div>
+      </div>
+ 
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <section id="links">
+        <h2>Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://www.strilla.com">
+            <article>
+                <h3> Visit STRILLA</h3>
+                <p> Exploring upcoming fashion releases and events.</p>
+            </article>
+        </a>
+
+        <a class="block" href="https://www.nike.com">
+            <article> 
+                <h3> Nike Releases</h3>
+                <p> Check out the latest sneaker drops.</p>
+            </article>
+        </a>
+         
+           <a class="block" href="https://www.adidas.com">
+            <article>
+                <h3>Adidas Releases</h3>
+                <p> Discover the newest Adidas dollections.</p>
+            </article>
+            
+        </section>
+
+
+    
+
+
+        
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+<script src="index.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

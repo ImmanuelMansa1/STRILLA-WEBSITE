@@ -1,0 +1,436 @@
+/*** You will not need this file until Unit 3 ***/
+html {
+    background-color:var(--bg-color); 
+}
+  body  {
+             background-color:rgb(0, 0, 0); 
+             color:white;  
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                padding: 20px;
+            }
+
+        h1 {
+            font-size: 5rem;
+            letter-spacing: 8px;
+            margin:0;
+
+            ;
+        }
+
+       .hero-text h2 {
+        font-size: 40px;
+        width: 500px;
+        
+          
+       }
+        
+        h3{
+            font-size: 28px;
+        }
+        
+        .hero {
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+            width: 100%;
+        }
+        .hero-text {
+            width: 50%;
+          
+             padding-top: 40px;
+             padding-left: 70px;
+            
+        }
+
+    .hero-image {
+        width: 50%;
+    }
+
+    
+        .hero-image img {
+    
+            width: 100%;
+           
+            height:auto;
+            border: 2px solid rgba(0, 0, 0, 0.815);   
+          } 
+
+          .about {
+            width: 60%;
+            padding: 50px;
+            margin-left: 100px;
+            
+          }
+          .about h2 {
+           font-size:30px;
+           text-align: center;
+           margin-top: 100px;
+          }
+          
+          .about p {
+            width: 700px;
+            max-width: 1000px;
+            line-height: 1.8;
+            text-align: left;
+    
+            
+          }
+          .hero-buttons {
+            display: flex;
+        
+            gap: 50px;
+          }
+          .primary-btn {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+          }
+
+          .secondary-btn {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding : 10px 25px;
+            border-radius: 6px ;
+            font-weight: bold;
+            cursor: pointer;
+
+          }
+
+          #what-to-expect {
+          width: 700px;
+           margin-top: 20px;
+            
+        
+          }
+            #what-to-expect h2 {
+              width: 600px;
+              max-width: 500px;
+              margin-left: 50px;
+              position: relative;
+              left: 6px;
+              font-size: 25px;
+              margin-top:-40px;
+             
+            }
+
+          #what-to-expect h3 {
+            width: 100%;
+            max-width: 800px;
+            margin-left:50px;
+            position: relative;
+            left: 6px;
+            font-size :25px;
+            margin-bottom: 40px;
+            
+          }
+
+          #what-to-expect li {
+            width: 150%;
+            max-width: 1000px;
+            margin-left: 80px;
+            font-size: 18px;
+           padding-left: 25px;
+           margin-bottom: 10px;
+        
+            line-height:1.6;
+          }
+        
+          #schedule {
+         width: 100%;
+         align-items: center;
+         font-size: 20px;
+        margin-left: 30px;
+        margin-top: 90px;
+       
+
+          }
+          
+          #schedule h2 {
+            width: 250px;
+            max-width: 800px;
+           position: relative;
+            margin-top: 50px;
+             left: 550px;
+          }
+             .navbar ul {
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+ 
+.navbar ul li a {
+    color: white;
+  text-decoration:none;
+  font-size: 20px;
+  font-weight: bold;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.navbar ul li a:hover {
+  color: silver;
+
+}
+                
+
+
+
+.schedule-container { 
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+    position: static;
+   margin-left: -20px;
+
+}
+ 
+
+  .event-card {
+    width: 355px;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    margin: -1px;
+  }
+        
+  .event-card img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;;
+ margin-left: 0;
+  }
+
+  #links {
+   width: 100%;
+    text-align: center;
+    margin: 200px auto 0 auto;
+  }
+ 
+  /* Default dark mode style */
+.dark-mode {
+background-color: white;
+color: black;
+}
+
+/* Example: Different dark mode style for h1 */
+.dark-mode .navbar ul li a {
+color: black;
+  
+    
+}
+.dark-mode .primary-btn {
+ border: 1px solid black;
+}
+ 
+
+
+.dark-mode .secondary-btn {
+  color: black;
+    border: 1px solid black;
+    color: black;
+}
+
+
+/* Example: Different dark mode style for visited links */
+#theme-button  {
+  background-color: black;
+  color: rgb(250, 249, 250);
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition:0.3 ease
+}
+ #theme-button:hover {
+  background-color: rgb(9, 77, 7);
+ }
+
+  .rsvp-section h2 {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 40px;
+
+ }
+
+
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+ 
+  /* Set border-color and background */
+}
+ 
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background-color:lightpink;
+  }
+
+.rsvp-para {
+   width: 55%;
+   padding-right: 10px;
+   margin-left: 80px;
+}
+
+.rsvp-participants {
+ width: 45%;
+ padding-right: 10px;
+}
+
+.form-container {
+  margin-left: 100px;
+}
+/*** Animations  ***
+  
+  Purpose:
+  - Add style rules to enable scroll animations for your website
+
+  When To Modify:
+  - [ ] Project 8 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.revealable {
+  --reveal-distance: 150px; /* CSS Variable */
+
+  scroll-margin-top:var(--reveal-distance);
+  opacity:0;
+  transition:all 2s ease;
+  position:relative;
+  transform: translateY(var(--reveal-distance));
+}
+
+.active {
+ scroll-margin-top: 0;
+ opacity: 1;
+transform: translateY(0);
+   
+}
+        
+ /*** Success Modal  ***
+  
+  Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  /* TODO: Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 600px;
+    max-width: 80%;
+
+    padding: 30px;
+    background-color: rgb(84, 42, 100);
+    border-radius: 15px;
+
+    /* Customize modal style here */
+    
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+   
+}
+
+#modal-item {
+    flex: 1;
+}
+#modal-image {
+    width: 300px;
+    height: auto;
+}
+#modal-text {
+    font-size: 22px;
+    line-height: 1.4;
+     color: black;
+}
+
+/*** Modal ***
+  
+  Purpose:
+  - Use this starter code to add a pop-up modal to your website.
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Project 9 (STRETCH FEATURE)
+  - [ ] Any time after
+***/
+
+ 
+
+
+ 
+
+ 
+
+
+             
+    
+      
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
